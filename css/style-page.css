@@ -4,13 +4,15 @@
     --roxo-color: rgb(130, 87, 230);
     --t-color: rgb(225, 225, 230);
     --background-color: #282a36;
-    --color-verdeTrybe: #0fa36b;
+    --color-laranja-DH: #cb1e40;
 }
 
 * {
     margin: 0;
     padding: 0;
     color: #fff;
+    text-decoration: none;
+    list-style: none;
 }
 
 body {
@@ -20,26 +22,25 @@ body {
 }
 
 main header {
-    padding: 5vh;
+    padding: 3vh;
     border-bottom: 1px solid #333;
     background: rgba(0, 0, 0, 0.1);
 }
 
 .links a {
-    text-decoration: none;
-    font-size: 1.8rem;
-    line-height: 2.8rem;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
     margin: 0 1.6rem;
-    text-decoration: none;
-    font-weight: 600;
 }
 .links a:hover {
     transition: 200ms;
-    color: var(--color-verdeTrybe);
-    /* border-bottom: 1px solid var(--roxo-color); */
-}.links a:last-child {
-    display: none;
+    color: #cb1e40;
+    border-bottom: 1px solid var(--color-laranja-DH);
 }
+
+/* }.links a:last-child {
+    display: none;
+} */
 
 .wrapper {
     /* padding: 32px; */
@@ -49,44 +50,37 @@ main header {
 
 .wrapper img {
     border-radius: 50%;
-    height: 15vw;
-    border: 5px solid rgba(0, 0, 0, 0.2);
-    margin-bottom: 32px;
+    height: 12vw;
+    border: 5px solid rgba(203, 30, 64, 1);
+    margin-bottom: 3vh;
 }
 .wrapper h1 {
-    font-size: 3.2rem;
-    line-height: 52px;
-    font-weight: bold;
+    font-size:2rem;
+    line-height: 3rem;
 }
 .wrapper h2 {
-    font-size: 2.4rem;
-    line-height: 3.4rem;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
     font-weight: normal;
-    margin-top: .8rem;
-
 }
 .wrapper p {
-    font-size: 2.4rem;
-    line-height: 3.4rem;
-    max-width: 500px;
-    margin: 32px auto;
-}
-.wrapper p a {
-    text-decoration: none;
-    color: #fff;
-}
-.wrapper p a:hover {
-    border-bottom: solid 1px var(--color-verdeTrybe);
+    font-size: 1.4rem;
+    line-height: 2.4rem;
 }
 
-.wrapper p a img {
-    background-color: #fff;
+.wrapper p a:hover {
+    border-bottom: 1px solid var(--color-laranja-DH);
 }
+
+.wrapper p a span {
+    color: var(--color-laranja-DH);
+}
+
 
 footer {
     margin: 0;
     padding: 0;
 }
 footer .links a {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
