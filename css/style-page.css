@@ -73,10 +73,14 @@ main header {
 }
 .wrapper p a {
     text-decoration: none;
-    color: var(--color-verdeTrybe);
+    color: #fff;
 }
 .wrapper p a:hover {
     border-bottom: solid 1px var(--color-verdeTrybe);
+}
+
+.wrapper p a img {
+    background-color: #fff;
 }
 
 footer {
