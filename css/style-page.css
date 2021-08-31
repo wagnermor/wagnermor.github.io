@@ -4,35 +4,85 @@
     --roxo-color: rgb(130, 87, 230);
     --t-color: rgb(225, 225, 230);
     --background-color: #282a36;
+    --color-verdeTrybe: #0fa36b;
 }
 
 * {
     margin: 0;
     padding: 0;
-    color: var(--t-color);
+    color: #fff;
 }
 
 body {
     background:#282a36;
     font-family: 'Source Sans Pro', sans-serif;
-}
-
-main header {
-    padding: 32px;
-    border-bottom: 1px solid #333;
-    background: rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-main header a {
+main header {
+    padding: 5vh;
+    border-bottom: 1px solid #333;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.links a {
     text-decoration: none;
-    font-size: 18px;
-    line-height: 28px;
-    margin: 0 16px;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    margin: 0 1.6rem;
     text-decoration: none;
     font-weight: 600;
 }
-main header a:hover {
+.links a:hover {
     transition: 200ms;
-    border-bottom: 1px solid var(--roxo-color);
+    color: var(--color-verdeTrybe);
+    /* border-bottom: 1px solid var(--roxo-color); */
+}.links a:last-child {
+    display: none;
+}
+
+.wrapper {
+    /* padding: 32px; */
+    padding: 2.5rem;
+
+}
+
+.wrapper img {
+    border-radius: 50%;
+    height: 15vw;
+    border: 5px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 32px;
+}
+.wrapper h1 {
+    font-size: 3.2rem;
+    line-height: 52px;
+    font-weight: bold;
+}
+.wrapper h2 {
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+    font-weight: normal;
+    margin-top: .8rem;
+
+}
+.wrapper p {
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+    max-width: 500px;
+    margin: 32px auto;
+}
+.wrapper p a {
+    text-decoration: none;
+    color: var(--color-verdeTrybe);
+}
+.wrapper p a:hover {
+    border-bottom: solid 1px var(--color-verdeTrybe);
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+}
+footer .links a {
+    font-size: 1.6rem;
 }
